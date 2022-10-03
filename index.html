@@ -1,59 +1,53 @@
 <style>
   body {
-    font-family: Arial;
+  font-family: Arial;
   }
 </style>
-
 <center>
-  
-<br> <br> <br>
-
-<h1>หยุดสงครามแห่งกบได้แล้ว</h1> <br>
-
-<h2>เรื่องที่ขำๆ จุดประกายสงครามขึ้นมาได้</h2> <br>
-
-<p>สงครามแห่งกบ ได้ดำเนินมาแล้ว เป็นเวลา</p>
-<!-- Display the countdown timer in an element -->
-<h2 id="countdown">Loading...</h2>
-
-<script>
-// Set the date we're counting down to
-var start = new Date(2022, 8, 27, 17, 27, 32).getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-  // Get today's date and time
-  var now = new Date().getTime();
-
-  // Find the distance between now and the count down date
-  var distance = now - start;
-  
-  function commas(x) {
-    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-  }
-
-  // Time calculations for days, hours, minutes and seconds
-  var y = Math.floor(distance / (1000 * 60 * 60 * 24 * 365));
-  var m = Math.floor((distance % (1000 * 60 * 60 * 24 * 365)) / (1000 * 60 * 60 * 24 * 30));
-  var d = Math.floor((distance % (1000 * 60 * 60 * 24 * 30)) / (1000 * 60 * 60 * 24));
-  var h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var min = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var s = Math.floor((distance % (1000 * 60)) / 1000);
-  var rawleft = Math.floor(distance / 1000);
-  var left = commas(rawleft)
-
-  // Display the result in countdown element
-  if distance > 1711159000 {
-    document.getElementById("countdown").innerHTML = "19 วัน 19 ชั่วโมง 19 นาที 19 วินาที"
-  } else {
-    document.getElementById("countdown").innerHTML = d + " วัน " + h + " ชั่วโมง "
-    + min + " นาที " + s + " วินาที";
-
-}, 1000);
-</script>
-
-<br><br>
-<b>#SaveRanaTown | #NoWar</b>
-
+  <br> <br> <br>
+  <h1>หยุดสงครามแห่งกบได้แล้ว</h1>
+  <br>
+  <h2>เรื่องที่ขำๆ จุดประกายสงครามขึ้นมาได้</h2>
+  <br>
+  <p>สงครามแห่งกบ ได้ดำเนินมาแล้ว เป็นเวลา</p>
+  <!-- Display the countdown timer in an element -->
+  <h2 id="countdown">Loading...</h2>
+  <script>
+    // Set the date we're counting down to
+    var start = new Date(2022, 8, 27, 17, 27, 32).getTime();
+    
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+    
+      // Get today's date and time
+      var now = new Date().getTime();
+    
+      // Find the distance between now and the count down date
+      var distance = now - start;
+      
+      function commas(x) {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+      }
+    
+      // Time calculations for days, hours, minutes and seconds
+      var y = Math.floor(distance / (1000 * 60 * 60 * 24 * 365));
+      var m = Math.floor((distance % (1000 * 60 * 60 * 24 * 365)) / (1000 * 60 * 60 * 24 * 30));
+      var d = Math.floor((distance % (1000 * 60 * 60 * 24 * 30)) / (1000 * 60 * 60 * 24));
+      var h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var min = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var s = Math.floor((distance % (1000 * 60)) / 1000);
+      var rawleft = Math.floor(distance / 1000);
+      var left = commas(rawleft)
+    
+      // Display the result in countdown element
+      if distance > 1711159000 {
+        document.getElementById("countdown").innerHTML = "19 วัน 19 ชั่วโมง 19 นาที 19 วินาที"
+      } else {
+        document.getElementById("countdown").innerHTML = d + " วัน " + h + " ชั่วโมง "
+        + min + " นาที " + s + " วินาที";
+    
+    }, 1000);
+  </script>
+  <br><br>
+  <b>#SaveRanaTown | #NoWar</b>
 </center>
