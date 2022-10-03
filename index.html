@@ -43,9 +43,12 @@ var x = setInterval(function() {
   var rawleft = Math.floor(distance / 1000);
   var left = commas(rawleft)
 
-  // Display the result in the element with id="demo"
-  document.getElementById("countdown").innerHTML = d + " วัน " + h + " ชั่วโมง "
-  + min + " นาที " + s + " วินาที";
+  // Display the result in countdown element
+  if distance > 1711159000 {
+    document.getElementById("countdown").innerHTML = "19 วัน 19 ชั่วโมง 19 นาที 19 วินาที"
+  } else {
+    document.getElementById("countdown").innerHTML = d + " วัน " + h + " ชั่วโมง "
+    + min + " นาที " + s + " วินาที";
 
 }, 1000);
 </script>
